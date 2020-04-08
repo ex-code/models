@@ -32,7 +32,6 @@ class KerasBenchmark(PerfZeroBenchmark):
                default_flags=None,
                flag_methods=None,
                tpu=None):
-    assert tf.version.VERSION.startswith('2.')
     super(KerasBenchmark, self).__init__(
         output_dir=output_dir,
         default_flags=default_flags,

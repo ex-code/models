@@ -44,7 +44,6 @@ class TransformerBenchmark(PerfZeroBenchmark):
 
   def __init__(self, output_dir=None, default_flags=None, root_data_dir=None,
                flag_methods=None):
-    assert tf.version.VERSION.startswith('2.')
     root_data_dir = root_data_dir if root_data_dir else ''
 
     self.train_data_dir = os.path.join(root_data_dir,
